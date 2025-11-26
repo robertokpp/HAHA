@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://daumaumento.vercel.app/ -->
+<html
+  lang="pt-br"
+  data-bybit-channel-name="12wiV5eP5sPM-p6ba7WCM"
+  data-bybit-is-default-wallet="true"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://daumaumento.vercel.app/revenue.ico"
+      type="image/x-icon"
+    />
+    <title>Só um aumentinho</title>
+  </head>
+
+  <body>
+    <img
+      src="./Só um aumentinho_files/mendigo-pica-pau.webp"
+      alt="Mendigo do Pica-Pau"
+    />
+    <h1
+      style="color: rgb(255, 190, 26); font-size: 64px; font-family:Impact, Haettenschweiler, &#39;Arial Narrow Bold&#39;, sans-serif; letter-spacing: 0.5px; font-weight: 400; translate: 0 -50px; text-shadow: 0 0 8px black;"
+    >
+      Olá, chefe
+    </h1>
+    <p
+      style="color: white; font-size: 32px; font-family: system-ui, -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Oxygen, Ubuntu, Cantarell, &#39;Open Sans&#39;, &#39;Helvetica Neue&#39;, sans-serif; translate: 0 -55px; font-weight: 700; text-shadow: 0 0 6px black; text-align: center;"
+    >
+      O senhor poderia, por gentileza,<br />
+      me dar um aumento?
+    </p>
+    <div class="botoes">
+      <a href="#"
+        ><button id="pos" style="cursor: pointer">
+          CLARO, MEU MELHOR FUNCIONÁRIO
+        </button></a
+      >
+
+      <a
+        href="https://scontent.fbfh1-1.fna.fbcdn.net/v/t1.6435-9/69457440_2603153889748681_5567779071758172160_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=wDRLX4Wm0P8Q7kNvwHruAhY&_nc_oc=AdnZht3NVT7PIAy6MbTRssvePLi1u0AYUDzqXRos81P4ZbrC422cjdw57vhikJ7U-dk&_nc_zt=23&_nc_ht=scontent.fbfh1-1.fna&_nc_gid=sf0C81XQAogB71byvUZi1A&oh=00_Afggy0Zp01JKWl5BcBePULk75X36y6Q2HqCKrwhDaslViQ&oe=694EAA2A"
+      >
+        <button
+          id="neg"
+          
+          style="
+          cursor: pointer;
+            background: linear-gradient(
+              145deg,
+              rgb(219, 5, 5),
+              rgb(249, 65, 65)
+            );
+            box-shadow: 0 0 20px rgb(255, 0, 0);
+          "
+        >
+          VAI TRABALHA VAGABUNDO
+        </button>
+      </a>
+    </div>
+
+    <img
+      src="./Só um aumentinho_files/giphy.gif"
+      alt="Chuva de Fundo em .gif"
+      class="background"
+    />
+
+    <footer id="rodape">
+      <span
+        >© Copyright 2024 -
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Desenvolvido por
+        <a
+          href="https://daumaumento.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Pedro Fratassi</a
+        >
+        &amp;
+        <a
+          href="https://daumaumento.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Natan Loc</a
+        >
+        Todos os Direitos Reservados.
+      </span>
+    </footer>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        overflow: hidden;
+      }
+
+      img {
+        width: 400px;
+        height: auto;
+        margin-top: 80px;
+      }
+
+      .background {
+        position: absolute;
+        opacity: 0.5;
+        width: 100vw;
+        height: 100vh;
+        z-index: -2;
+      }
+
+      button {
+        width: 250px;
+        background-color: black;
+        color: white;
+        height: 50px;
+        font-weight: bold;
+        font-size: 16px;
+        background: linear-gradient(
+          145deg,
+          rgb(13, 60, 190),
+          rgb(22, 123, 231)
+        );
+        border: none;
+        box-shadow: 0 0 20px rgb(12, 76, 196);
+        transition: 0.3s;
+      }
+
+      #pos:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 60px rgb(1, 90, 255);
+        transition: 0.5s;
+      }
+
+      .botoes {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: -30px;
+      }
+
+      video {
+        position: absolute;
+        width: 100vw;
+        height: auto;
+        z-index: -1;
+        opacity: 0.4;
+      }
+
+      #rodape {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: aqua;
+      }
+
+      a:hover {
+        color: #fff;
+      }
+    </style>
+
+    <script>
+      const botao = document.querySelector("#pos");
+
+      let moveX = 0;
+      let moveY = 0;
+
+      botao.addEventListener("mouseover", function () {
+        moveX = Math.random() * 801 - 400;
+        moveY = Math.random() * 401 - 400;
+
+        botao.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      });
+    </script>
+  </body>
+</html>
